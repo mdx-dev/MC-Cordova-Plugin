@@ -14,8 +14,9 @@ Release notes for the plugin can be found [here](CHANGELOG.md)
 cordova plugin add cordova-plugin-marketingcloudsdk
 ```
 
-#### 2. Add 'MarketingCloudSDKConfiguration.json' to your app's resource bundle
+#### 2. Provide Marketing Cloud credentials
 
+1. Add MarketingCloudSDKConfiguration.json to your application.
 ```json
 [
   {
@@ -33,6 +34,12 @@ cordova plugin add cordova-plugin-marketingcloudsdk
 ]
 
 ```
+2. Add the following to your application's config.xml file.
+````xml
+<platform name="ios">
+  <resource-file src="MarketingCloudSDKConfiguration.json" />
+</platform>
+````
 
 #### 3. Provide FCM credentials
 
